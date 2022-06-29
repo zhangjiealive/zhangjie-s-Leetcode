@@ -1,4 +1,3 @@
-package likou;
 
 public class likou08 {
 

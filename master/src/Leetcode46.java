@@ -1,4 +1,3 @@
-package likou;
 //: Leetcode46.java
 
 /** 力扣46题全排列 https://leetcode.cn/problems/permutations/

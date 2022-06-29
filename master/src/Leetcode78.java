@@ -1,4 +1,3 @@
-package likou;
 //: Leetcode78.java
 
 import java.util.LinkedList;

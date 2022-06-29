@@ -1,4 +1,3 @@
-package likou;
 //: Leetcode104.java
 
 /** 力扣104题 https://leetcode.cn/problems/maximum-depth-of-binary-tree/

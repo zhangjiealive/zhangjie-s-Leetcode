@@ -1,4 +1,3 @@
-package likou;
 
 public class likou10 {
     public boolean isMatch(String s, String p) {

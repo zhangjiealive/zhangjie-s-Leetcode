@@ -1,4 +1,3 @@
-package likou;
 //: Leetcode300.java
 
 import java.util.Arrays;

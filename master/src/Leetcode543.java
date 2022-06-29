@@ -1,4 +1,3 @@
-package likou;
 //: Leetcode543.java
 
 /** 力扣543题 https://leetcode.cn/problems/diameter-of-binary-tree/

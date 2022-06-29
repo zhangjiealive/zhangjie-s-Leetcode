@@ -1,4 +1,4 @@
-package likou;
+
 //: likou1108.java
 
 /** 力扣1108题 https://leetcode.cn/problems/defanging-an-ip-address/

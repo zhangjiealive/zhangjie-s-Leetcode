@@ -1,4 +1,3 @@
-package likou;
 //: Leetcode136.java
 
 /** 力扣136题 https://leetcode.cn/problems/single-number/

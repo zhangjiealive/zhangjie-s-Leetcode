@@ -1,4 +1,4 @@
-package likou;
+
 //: likou27.java
 
 /** 力扣1108题 https://leetcode.cn/problems/remove-element/

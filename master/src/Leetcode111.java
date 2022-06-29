@@ -1,4 +1,3 @@
-package likou;
 //: Leetcode111.java
 
 /** 力扣111题二叉树的最小深度 https://leetcode.cn/problems/minimum-depth-of-binary-tree/

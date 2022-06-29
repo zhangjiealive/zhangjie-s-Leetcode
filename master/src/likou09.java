@@ -1,4 +1,3 @@
-package likou;
 
 public class likou09 {
     public boolean isPalindrome(int x) {

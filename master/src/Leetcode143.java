@@ -1,4 +1,3 @@
-package likou;
 //: Leetcode143.java
 
 /** 力扣143题 https://leetcode.cn/problems/reorder-list/

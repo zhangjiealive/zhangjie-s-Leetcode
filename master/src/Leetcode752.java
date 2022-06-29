@@ -1,4 +1,3 @@
-package likou;
 //: Leetcode752.java
 import java.util.HashSet;
 import java.util.LinkedList;

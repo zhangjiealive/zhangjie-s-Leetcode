@@ -1,4 +1,3 @@
-package likou;
 
 public class likou05 {
     public boolean ishuiwenchuan(String s, int i, int j) {

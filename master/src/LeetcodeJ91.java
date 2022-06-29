@@ -1,4 +1,3 @@
-package likou;
 //: LeetcodeJ91.java
 
 /** 力扣剑指 Offer II 091题 https://leetcode.cn/problems/JEj789/?show=1

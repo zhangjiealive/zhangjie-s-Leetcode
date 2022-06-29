@@ -1,4 +1,3 @@
-package likou;
 //: Leetcode58.java
 
 /** 力扣58题 https://leetcode.cn/problems/length-of-last-word/

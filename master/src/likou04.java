@@ -1,4 +1,3 @@
-package likou;
 
 import java.util.Arrays;
 
