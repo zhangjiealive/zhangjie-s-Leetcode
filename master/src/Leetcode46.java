@@ -10,13 +10,13 @@ import java.util.List;
 
 public class Leetcode46 {
     List<List<Integer>> res=new LinkedList<>();
+    LinkedList<Integer> once=new LinkedList<>();
     public List<List<Integer>> permute(int[] nums) {
-        LinkedList<Integer> once=new LinkedList<>();
-        permuteHelp(nums,once);
+        permuteHelp(nums);
         return res;
     }
 
-    public void permuteHelp(int[] nums,LinkedList<Integer> once) {
+    public void permuteHelp(int[] nums) {
         if(once.size()== nums.length){
             res.add(new LinkedList<>(once));
             return ;
@@ -26,7 +26,7 @@ public class Leetcode46 {
              continue;
          }
          once.add(nums[i]);
-         permuteHelp(nums,once);
+         permuteHelp(nums);
          once.removeLast();
         }
     }
