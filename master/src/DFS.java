@@ -1,4 +1,4 @@
-public class DFS {  // 深度优先搜索
+public class DFS {  // 树的深度优先遍历
     void DFS(TreeNode root) {
         if (root == null) {
             return;

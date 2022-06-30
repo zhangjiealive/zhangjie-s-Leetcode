@@ -38,6 +38,6 @@ public class SymmetricMatrix {
             System.out.println();
         }
         SymmetricMatrix symmetricMatrix = new SymmetricMatrix(a);
-        System.out.println(symmetricMatrix.getValue(3, 3));
+        System.out.println(symmetricMatrix.getValue(4, 3));
     }
 }

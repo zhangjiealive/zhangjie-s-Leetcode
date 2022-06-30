@@ -10,7 +10,7 @@ import java.util.Stack;
 public class Leetcode145 {
     public List<Integer> postorderTraversal(TreeNode root) {
         LinkedList<Integer> integers = new LinkedList<>();
-        postorderTraversalHelp2(root,integers);
+        postorderTraversalHelp3(root,integers);
         return integers;
     }
 
@@ -42,7 +42,7 @@ public class Leetcode145 {
         }
     }
 
-    /**将后序遍历看错，中序遍历的逆置，先一直往右子树找，root=root.right,如果root为空，栈顶出栈(回到前驱(此左子树的双亲结点))插入链表，而后往左子树找，循环此操作，从而达到右中左的遍历顺序，在把结果逆置（将每次结果插入链表头，得到同样的效果）
+    /**将后序遍历看做，先一直往右子树找，root=root.right,如果root为空，栈顶出栈(回到前驱(此左子树的双亲结点))插入链表，而后往左子树找，循环此操作，从而达到右中左的遍历顺序，在把结果逆置（将每次结果插入链表头，得到同样的效果）
      *
      * @param root
      * @param integers
@@ -62,7 +62,26 @@ public class Leetcode145 {
         }
     }
 
-    public static void main(String[] args) {
+    public void postorderTraversalHelp3(TreeNode root,LinkedList<Integer> integers) {
+        Stack<TreeNode> treeNodes = new Stack<>();
+        if(root==null){
+            return;
+        }
+        TreeNode treeNode=new TreeNode();
+        treeNodes.push(root);
+        while(!treeNodes.isEmpty()){
+            treeNode = treeNodes.pop();
+            integers.addFirst(treeNode.val);
+            if(treeNode.left!=null){
+                treeNodes.push(treeNode.left);
+            }
+            if(treeNode.right!=null){
+                treeNodes.push(treeNode.right);
+            }
+        }
+    }
+
+        public static void main(String[] args) {
         TreeNode t7 = new TreeNode(7,null,null);
         TreeNode t6 = new TreeNode(6,null,null);
         TreeNode t5 = new TreeNode(5,null,null);
