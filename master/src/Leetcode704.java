@@ -24,7 +24,7 @@ public class Leetcode704 {
         }
         return -1;
     }
-    /*寻找左侧边界的二分查找(两头闭)
+    /*寻找左侧边界的二分查找(两头闭)(便于记忆)
         int left=0;
         int right=nums.length-1;
         while(left<=right){
@@ -68,7 +68,7 @@ public class Leetcode704 {
         if(left==nums.length) return -1;
         return nums[left]==target?left:-1;
     }
-    /*寻找右侧边界的二分查找(两头闭)
+    /*寻找右侧边界的二分查找(两头闭)(便于记忆)
         int left=0;
         int right=nums.length-1;
         while(left<=right){
@@ -123,6 +123,7 @@ public class Leetcode704 {
     public static void main(String[] args) {
         Leetcode704 leetcode704 = new Leetcode704();
         int[] a={2,3,9,10,11,23,24};
-        leetcode704.searchRange(a,12);
+        System.out.println(leetcode704.leftBoundSearch(a, 12));
+        System.out.println(leetcode704.rightBoundSearch(a, 12));
     }
 }
