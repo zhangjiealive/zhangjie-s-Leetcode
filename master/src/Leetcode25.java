@@ -22,7 +22,7 @@ public class Leetcode25 {
         a=b=head;
         // 将b节点往后移动k个
         for (int i = 0; i < k; i++) {
-            // 如果b在移动过程中为空，则不进行反转直接返回head
+            // 如果b在移动过程中为空，则不进行反转直接返回head(因为此时a，b之间元素不足k个)
             if(b==null) return head;
             b=b.next;
         }
