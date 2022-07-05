@@ -12,6 +12,7 @@ public class Leetcode889 {
     public TreeNode constructFromPrePost(int[] preorder, int[] postorder) {
         map=new HashMap<>();
         int n=preorder.length;
+        // 将后序遍历的索引存入map
         for (int i = 0; i < n; i++) {
             map.put(postorder[i],i);
         }
@@ -22,11 +23,14 @@ public class Leetcode889 {
         if(preStart>preEnd){
             return null;
         }
+        // 注意，这里与其他两种不同，因为后面要用到preStart+1,所以如果preStart==preEnd时，此时区间只有一个元素，preStart+1会异常
+        // 而正好preStart==preEnd时只有一个元素，直接返回这个下标的元素的节点即可
         if(preStart==preEnd){
             return new TreeNode(preorder[preStart]);
         }
         int rootVal=preorder[preStart];
         int index=map.get(preorder[preStart+1]);
+        //边界是从0到index，例如index为2，012有3个元素，所以+1
         int leftBound=index-postStart+1;
         TreeNode treeNode = new TreeNode(rootVal);
         treeNode.left=constructFromPrePostHelp(preorder,preStart+1,preStart+leftBound,postorder,postStart,index);
