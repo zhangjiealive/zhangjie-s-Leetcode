@@ -66,6 +66,10 @@ public class Leetcode315 {
         for (int p = lo; p <= hi; p++) {
             if (i == mid + 1) {
                 arr[p] = temp[j++];
+                /**
+                 * 当j插入完了之后
+                 * 此时代表i的指针位置的数大于j中所有的数
+                 */
             } else if (j == hi + 1) {
                 arr[p] = temp[i++];
                 // 更新 count 数组
@@ -74,6 +78,10 @@ public class Leetcode315 {
             } else if (temp[i].val > temp[j].val) {
                 arr[p] = temp[j++];
             } else {
+                /**
+                 * 当插入j中的元素时
+                 * 代表i目前位置的数大于j目前指针已经之前之前的所有数
+                 */
                 arr[p] = temp[i++];
                 // 更新 count 数组
                 // 通过arr[p].id可以确定唯一位置的索引

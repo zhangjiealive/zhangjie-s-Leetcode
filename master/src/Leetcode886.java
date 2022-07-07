@@ -63,6 +63,7 @@ public class Leetcode886 {
         }
         // 从题目给的表中构建图
         for (int[] edge : matrix) {
+            // 无向图，无所谓顺序
             int from=edge[1];
             int to=edge[0];
             // 无向图就是双向的，两边互相构建即可

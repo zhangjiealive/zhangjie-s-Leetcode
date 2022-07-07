@@ -1,5 +1,6 @@
 /**
  * 并查集，判断连通性
+ * Kruskal算法基于并查集
  */
 public class UF {
     private int count;
