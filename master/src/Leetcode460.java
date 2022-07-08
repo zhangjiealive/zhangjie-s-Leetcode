@@ -96,13 +96,19 @@ public class Leetcode460 {
          * @param key
          */
         private void increaseFreq(int key){
+            // 获取此key的使用次数
             int freq=keyToFreq.get(key);
+            // 在kf集合中将freq(使用次数)+1
             keyToFreq.put(key,freq+1);
+            // 在fk集合中的frep次数的集合中移除此key
             freqToKeys.get(freq).remove(key);
             freqToKeys.putIfAbsent(freq+1,new LinkedHashSet<>());
+            // 在fk集合中的freq+1次数的集合中加入此key
             freqToKeys.get(freq+1).add(key);
+            // 如果fk集合中此freq的集合为空的话，直接删除
             if(freqToKeys.get(freq).isEmpty()){
                 freqToKeys.remove(freq);
+                // 并且将最小次数更新(因为原本此key的freq本来是最小的，但是此freq中移除此后为空，所以minFreq随着此key的freq增大而增大)
                 if(freq==this.minFreq){
                     this.minFreq++;
                 }
