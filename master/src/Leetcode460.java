@@ -62,7 +62,7 @@ public class Leetcode460 {
             keyToVal.put(key,value);
             // 插入kf，因为之前没有所以使用次数为1
             keyToFreq.put(key,1);
-            // ?
+            // putIfAbsent() 方法会先判断指定的键（key）是否存在，不存在则将键/值对插入到 HashMap 中
             freqToKeys.putIfAbsent(1,new LinkedHashSet<>());
             // 在fk中使用次数为1的set中插入
             freqToKeys.get(1).add(key);
@@ -102,6 +102,7 @@ public class Leetcode460 {
             keyToFreq.put(key,freq+1);
             // 在fk集合中的frep次数的集合中移除此key
             freqToKeys.get(freq).remove(key);
+            //putIfAbsent() 方法会先判断指定的键（key）是否存在，不存在则将键/值对插入到 HashMap 中
             freqToKeys.putIfAbsent(freq+1,new LinkedHashSet<>());
             // 在fk集合中的freq+1次数的集合中加入此key
             freqToKeys.get(freq+1).add(key);
