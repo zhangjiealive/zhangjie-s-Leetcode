@@ -8,7 +8,7 @@ import java.util.ArrayDeque;
  * @version 1.0
  */
 public class Leetcode316 {
-    /**
+    /**单调栈
      * 对字符串进行去重（保持相对位置，不可以打乱顺序，所以不可以用set集合）
      * 并且保持字典序最小，意为ASCII码小的在前面
      * @param s
