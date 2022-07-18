@@ -3,6 +3,11 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 
+/** 514. 自由之路 https://leetcode.cn/problems/freedom-trail/
+ * @author zhangjie
+ * @author www.zj0628.online
+ * @version 1.0
+ */
 public class Leetcode514 {
     /**
      * 动态规划：自底向上的迭代

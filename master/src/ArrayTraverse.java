@@ -36,5 +36,14 @@ public class ArrayTraverse {
             }
             System.out.println();
         }
+
+        System.out.println();
+        for (int j = 1; j < n; j++) {
+            for (int i = j - 1; i >= 0; i--) {
+                System.out.print(a[i][j]+" ");
+            }
+            System.out.println();
+        }
+
     }
 }
