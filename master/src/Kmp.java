@@ -39,7 +39,7 @@ public class Kmp {
             }
             return -1;
         }
-
+        // 正常计算的next，但是前面多一位，数组长度多1位
         private int[] next(String ch) {
             int[] next=new int[ch.length()];
             next[1] = 0;
@@ -54,6 +54,8 @@ public class Kmp {
             }
             return next;
         }
+
+    // 优化的nextval
     private int[] nextval(String ch) {
         int[] next=new int[ch.length()];
         next[1] = 0;
@@ -79,8 +81,8 @@ public class Kmp {
 
     public static void main(String[] args) {
         Kmp kmp = new Kmp();
-        System.out.println(kmp.strStr("mississippi",
-                "issipi"));
+        System.out.println(kmp.strStr("abaabadsfasd",
+                "abad"));
     }
 }
 

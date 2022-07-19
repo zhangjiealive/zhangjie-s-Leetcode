@@ -80,7 +80,7 @@ public class Kmp2 {
     public static void main(String args[])
     {
         String txt = "ABABDABACDABABCABAB";
-        String pat = "AB";
+        String pat = "abaabcac";
         new Kmp2().KMPSearch(pat, txt);
     }
 }

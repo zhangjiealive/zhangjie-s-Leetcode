@@ -72,4 +72,11 @@ public class Kmp1 {
         }
         return lps;
     }
+
+    public static void main(String args[])
+    {
+        String txt = "abaabaabac";
+        String pat = "abac";
+        new Kmp1().KMPSearch(pat, txt);
+    }
 }
