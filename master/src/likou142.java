@@ -20,13 +20,7 @@ public class likou142 {
         for (int i = 0; i < set.size()-1; i++) {
             replace=replace.next;
         }
-        while(replace.next!=head){
-            head=head.next;
-        }
-        if(replace.next==head){
-            return replace.next;
-        }
-        return null;
+        return replace.next;
     }
 
     public static void main(String[] args) {
